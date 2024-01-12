@@ -37,7 +37,7 @@ const LoginPage = () => {
 
   return (
     <div className="bg-red-400">
-      <div className="min-h-screen text-center items-center justify-between ">
+      <div className="min-h-screen text-center items-center justify-between  ">
         <div className="text-3xl">
           <Image
             className="flex absolutely positioned"
@@ -47,24 +47,45 @@ const LoginPage = () => {
             height={200}
           />
           Welcome to OMEM
-          <p>Please Log In</p>
+          <p>Please Register</p>
         </div>
         <div className="text-3xl">
           <ul>
             <li className="py-2">
               <input
                 type="text"
-                placeholder="Username"
+                placeholder="First Name"
                 className="text-black rounded-md py-2"
               />
+              <li>
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  className="text-black rounded-md py-2 mt-2"
+                />
+              </li>
+              <li>
+                <input
+                  type="text"
+                  placeholder="Email"
+                  className="text-black rounded-md py-2 mt-2"
+                />
+              </li>
             </li>
             <li>
               <input
                 type="password"
                 name=""
                 id=""
-                placeholder="Password"
+                placeholder="New Password"
                 className="text-black rounded-md py-2"
+              />
+            </li>
+            <li>
+              <input
+                type="text"
+                placeholder="Confirm Password"
+                className="text-black rounded-md py-2 mt-2"
               />
             </li>
           </ul>
@@ -74,25 +95,9 @@ const LoginPage = () => {
             }}
             className="border-2 rounded-lg mt-5 bg-red-600 py-1 hover:bg-gray-500 px-2"
           >
-            Log In
-          </button>
-          <button
-            onClick={() => {
-              router.push("/register");
-            }}
-            className="border-2 rounded-lg mt-5 bg-red-600 py-1 hover:bg-gray-500 px-2"
-          >
             Register
           </button>
         </div>
-        <div>Or Sign Up With</div>
-        <GoogleLogin
-          clientId="710662064970-c4tvnp5j5tm95fs6vp3e1obn1obad01g.apps.googleusercontent.com"
-          buttonText="Google"
-          onSuccess={handleGoogleLoginSuccess}
-          onFailure={handleGoogleLoginFailure}
-          cookiePolicy={"single_host_origin"}
-        />
       </div>
     </div>
   );
