@@ -5,8 +5,6 @@ import { useRouter } from "next/navigation";
 import { GoogleLogin } from "react-google-login";
 import firebase from "firebase/compat/app"; // Import Firebase
 import "firebase/compat/auth"; // Import the auth module
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 
 const LoginPage = () => {
   const router = useRouter();
@@ -20,9 +18,6 @@ const LoginPage = () => {
     appId: "1:988708156371:web:c0d4874b4b977bb6ee7526",
     measurementId: "G-SPZBKBHYTS",
   };
-
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
 
   if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
