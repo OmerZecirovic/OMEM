@@ -1,17 +1,23 @@
-// Navbar.tsx
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import DarkModeToggle from "./DarkModeToggle";
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+  toggleDarkMode: () => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ toggleDarkMode }) => {
   const router = useRouter();
 
+  const [isDarkModeActive, setDarkModeActive] = useState(false);
+
   return (
-    <nav className="bg-red-200 p-4">
+    <nav className={`p-4 ${isDarkModeActive ? "dark" : ""}`}>
       <div className="flex absolute">
         <Image src="/assets/logo2.png" alt="logo" width="40" height="40" />
       </div>
-      <ul className="flex items-center justify-center space-x-4">
+      <ul className="flex items-center justify-center space-x-4 ml-auto">
         <li>
           <button
             className="hover:bg-red-500 rounded-md px-2 py-1"
@@ -41,6 +47,9 @@ const Navbar: React.FC = () => {
           >
             Woman
           </button>
+        </li>
+        <li>
+          <DarkModeToggle toggleDarkMode={toggleDarkMode} />
         </li>
       </ul>
     </nav>

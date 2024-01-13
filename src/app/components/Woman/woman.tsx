@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Navbar from "../buttonsnavbars/Navbar";
@@ -72,9 +72,18 @@ const items = [
 const Woman = () => {
   const router = useRouter();
 
+  const [isDarkModeActive, setDarkModeActive] = useState(false);
+
+  // Dark Mode Toggle Function
+  const toggleDarkMode = () => {
+    setDarkModeActive((prev) => !prev);
+  };
+
   return (
-    <div className=" bg-red-400">
-      <Navbar />
+    <div
+      className={`bg-red-400 ${isDarkModeActive ? "bg-dark text-dark" : ""}`}
+    >
+      <Navbar toggleDarkMode={toggleDarkMode} />
       <h1 className="font-bold text-3xl text-center items-center justify-between">
         Products for Sale Woman
       </h1>
