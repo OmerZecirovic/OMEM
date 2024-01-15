@@ -49,7 +49,10 @@ const Navbar: React.FC<NavbarProps> = ({ toggleDarkMode }) => {
           </button>
         </li>
         <li>
-          <DarkModeToggle toggleDarkMode={toggleDarkMode} />
+          <DarkModeToggle
+            toggleDarkMode={toggleDarkMode}
+            isDarkModeActive={false}
+          />
         </li>
       </ul>
     </nav>
