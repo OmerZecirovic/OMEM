@@ -10,7 +10,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ toggleDarkMode }) => {
   const router = useRouter();
 
-  const [isDarkModeActive, setDarkModeActive] = useState(false);
+  const [isDarkModeActive, setDarkModeActive] = useState(true);
 
   return (
     <nav className={`p-4 ${isDarkModeActive ? "dark" : ""}`}>

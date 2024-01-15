@@ -18,7 +18,7 @@ const Page = () => {
 
   return (
     <div
-      className={`bg-red-400 ${isDarkModeActive ? "bg-dark text-dark" : ""}`}
+      className={`bg-gray-400 ${isDarkModeActive ? "bg-dark text-dark" : ""}`}
     >
       <Navbar toggleDarkMode={toggleDarkMode} />
       <div className="text-3xl font-bold mt-5">Contact Us</div>

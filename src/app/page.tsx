@@ -90,7 +90,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="bg-red-400">
+    <div className=" bg-gray-400">
       <div className="min-h-screen text-center items-center justify-between ">
         <div className="text-3xl">
           <Image

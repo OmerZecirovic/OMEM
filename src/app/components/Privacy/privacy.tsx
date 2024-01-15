@@ -17,7 +17,7 @@ const PrivacyPolicyPage = () => {
 
   return (
     <div
-      className={`bg-red-400 ${isDarkModeActive ? "bg-dark text-dark" : ""}`}
+      className={`bg-gray-400 ${isDarkModeActive ? "bg-dark text-dark" : ""}`}
     >
       <Navbar toggleDarkMode={toggleDarkMode} />
       <div className="min-h-screen font-bold text-3xl text-center items-center justify-between p-8">
