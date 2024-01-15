@@ -63,9 +63,9 @@ const AddCard = () => {
           <li>
             <p>Card Type</p>
             <select name="Card Type" id="" className="text-black">
-              <option value="mastercard">mastercard</option>
-              <option value="visa">visa</option>
-              <option value="paypal">paypal</option>
+              <option value="mastercard">Mastercard</option>
+              <option value="visa">Visa</option>
+              <option value="paypal">Paypal</option>
             </select>
           </li>
           <li className="text-black">
