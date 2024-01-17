@@ -4,52 +4,60 @@ import { useRouter } from "next/navigation";
 import Navbar from "../buttonsnavbars/Navbar";
 import Footer from "../buttonsnavbars/Footer";
 import { loadStripe } from "@stripe/stripe-js";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const AddCard = () => {
   const router = useRouter();
-
   const stripePromise = loadStripe(
     "pk_test_51OYrgkE9IaDnmeAe0Q9lUZK9m08mVgI8NZBJ0EnVvNJ8b6QH4TiAvDxxa5SieqJ2hmEvILkzqR3P070s3ek9UXmV00zhN0G2uO"
   );
-
-  // Update your handlePayment function
-  const handlePayment = async () => {
-    const stripe = await stripePromise;
-
-    if (!stripe) {
-      console.error("Stripe is not initialized");
-      return;
-    }
-
-    const response = await fetch(
-      "http://localhost:3001/create-checkout-session",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          // Pass any required data for payment
-          // For example, you can pass the selected card type, card number, etc.
-        }),
-      }
-    );
-
-    const session = await response.json();
-
-    const result = await stripe.redirectToCheckout({
-      sessionId: session.id,
-    });
-
-    if (result.error) {
-      console.error(result.error.message);
-    }
-  };
-
   const [isDarkModeActive, setDarkModeActive] = useState(false);
 
   const toggleDarkMode = () => {
     setDarkModeActive((prev) => !prev);
+  };
+
+  const handlePayment = async () => {
+    try {
+      const stripe = await stripePromise;
+
+      if (!stripe) {
+        console.error("Stripe is not initialized");
+        return;
+      }
+
+      const response = await fetch(
+        "http://localhost:3001/create-checkout-session",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            // Pass any required data for payment
+            // For example, you can pass the selected card type, card number, etc.
+          }),
+        }
+      );
+
+      const session = await response.json();
+
+      const result = await stripe.redirectToCheckout({
+        sessionId: session.id,
+      });
+
+      if (result.error) {
+        console.error(result.error.message);
+        toast.error("Failed to add card. Please try again.", {});
+      } else {
+        // Show success notification
+        toast.success("Card successfully added!", {});
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to add card. Please try again.", {});
+    }
   };
 
   return (
@@ -65,7 +73,7 @@ const AddCard = () => {
             <select name="Card Type" id="" className="text-black">
               <option value="mastercard">Mastercard</option>
               <option value="visa">Visa</option>
-              <option value="paypal">Paypal</option>
+              <option value="paypal">aypal</option>
             </select>
           </li>
           <li className="text-black">
@@ -102,6 +110,7 @@ const AddCard = () => {
           Add Card
         </button>
       </div>
+      <ToastContainer position="bottom-right" />
       <Footer />
     </div>
   );
