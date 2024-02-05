@@ -9,12 +9,14 @@ export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
   const [isSearchVisible, setIsSearchVisible] = useState(false);
   const searchContainerRef = useRef(null);
+  const ref = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const handleClickOutside = (event: { target: any }) => {
+    const handleClickOutside = (event: MouseEvent) => {
       if (
         searchContainerRef.current &&
-        !searchContainerRef.current.contains(event.target)
+        !!(searchContainerRef.current as any).contains &&
+        !(searchContainerRef.current as any).contains(event.target as Node)
       ) {
         setIsSearchVisible(false);
       }
@@ -25,7 +27,7 @@ export default function Navbar() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [searchContainerRef]);
+  }, []);
 
   const handleSearch = () => {
     console.log("Searching for:", searchQuery);
