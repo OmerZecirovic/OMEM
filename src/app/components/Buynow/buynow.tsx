@@ -14,10 +14,6 @@ const AddCard = () => {
   );
   const [isDarkModeActive, setDarkModeActive] = useState(false);
 
-  const toggleDarkMode = () => {
-    setDarkModeActive((prev) => !prev);
-  };
-
   const handlePayment = async () => {
     try {
       const stripe = await stripePromise;
