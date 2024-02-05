@@ -157,16 +157,9 @@ const LoginPage = () => {
   };
 
   return (
-    <div className=" bg-gray-400">
-      <div className="min-h-screen text-center items-center justify-between ">
+    <div className=" bg-white text-gray-700">
+      <div className="grid min-h-screen place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
         <div className="text-3xl">
-          <Image
-            className="flex absolutely positioned"
-            src="/assets/logo2.png"
-            alt="logo"
-            width={300}
-            height={200}
-          />
           Welcome to OMEM
           <p>Please Log In</p>
         </div>
@@ -177,7 +170,7 @@ const LoginPage = () => {
                 type="text"
                 name="email"
                 placeholder="Email"
-                className="text-black rounded-md py-2"
+                className="text-black rounded-md py-2 outline"
                 onChange={handleChange}
               />
             </li>
@@ -186,27 +179,19 @@ const LoginPage = () => {
                 type="password"
                 name="password" // Change from "" to "password"
                 placeholder="Password"
-                className="text-black rounded-md py-2"
+                className="text-black rounded-md py-2 outline"
                 onChange={handleChange}
               />
             </li>
           </ul>
           <button
             onClick={handleRegularLogin}
-            className="border-2 rounded-lg mt-5 bg-red-600 py-1 hover:bg-gray-500 px-2"
+            className="rounded-md bg-indigo-600 px-3.5 py-2.5 mt-2 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Log In
           </button>
-          <button
-            onClick={() => {
-              router.push("/register");
-            }}
-            className="border-2 rounded-lg mt-5 bg-red-600 py-1 hover:bg-gray-500 px-2"
-          >
-            Register
-          </button>
         </div>
-        <div>Or Sign In With</div>
+        <div className="mt-2 text-gray-700 text-xl">Or Sign In With</div>
         <GoogleLogin
           clientId="710662064970-c4tvnp5j5tm95fs6vp3e1obn1obad01g.apps.googleusercontent.com"
           buttonText="Google"

@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Navbar from "../buttonsnavbars/Navbar";
 import BuyNowButton from "../buttonsnavbars/BuyNowbutton";
 import Footer from "../buttonsnavbars/Footer";
+import style from "styled-jsx/style";
 
 const items = [
   {
@@ -72,22 +73,9 @@ const items = [
 const Man = () => {
   const router = useRouter();
 
-  const [isDarkModeActive, setDarkModeActive] = useState(false);
-
-  // Dark Mode Toggle Function
-  const toggleDarkMode = () => {
-    setDarkModeActive((prev) => !prev);
-  };
-
   return (
-    <div
-      className={`bg-gray-400 ${isDarkModeActive ? "bg-dark text-dark" : ""}`}
-    >
-      <Navbar toggleDarkMode={toggleDarkMode} />
-      <h1 className="font-bold text-3xl text-center items-center justify-between">
-        Products for Sale Man
-      </h1>
-
+    <div className="bg-gray-400 min-h-screen z-0">
+      <Navbar />
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {items.map((item) => (
           <div

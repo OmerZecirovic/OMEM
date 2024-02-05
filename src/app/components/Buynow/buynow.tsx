@@ -64,7 +64,7 @@ const AddCard = () => {
     <div
       className={`bg-gray-400 ${isDarkModeActive ? "bg-dark text-dark" : ""}`}
     >
-      <Navbar toggleDarkMode={toggleDarkMode} />
+      <Navbar />
       <div className="min-h-screen text-center items-center justify-between ">
         <div className="text-3xl font-bold">Add your Card</div>
         <ul>
@@ -73,7 +73,7 @@ const AddCard = () => {
             <select name="Card Type" id="" className="text-black">
               <option value="mastercard">Mastercard</option>
               <option value="visa">Visa</option>
-              <option value="paypal">aypal</option>
+              <option value="paypal">Paypal</option>
             </select>
           </li>
           <li className="text-black">
@@ -85,7 +85,7 @@ const AddCard = () => {
           </li>
           <li>
             <p>Expiring Date</p>
-            <input type="date" className="py-2 text-black rounded-md" />
+            <input type="month" className="py-2 text-black rounded-md" />
           </li>
           <li>
             <input

@@ -6,13 +6,14 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        dark: '#1a202c', 
+
       },
       textColor: {
-        dark: '#ffffff', 
+
       },
     },
   },
-  plugins: [],
-  darkMode: 'class',
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

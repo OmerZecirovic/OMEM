@@ -81,9 +81,11 @@ const Woman = () => {
 
   return (
     <div
-      className={`bg-gray-400 ${isDarkModeActive ? "bg-dark text-dark" : ""}`}
+      className={`bg-gray-400 z-0 ${
+        isDarkModeActive ? "bg-dark text-dark" : ""
+      }`}
     >
-      <Navbar toggleDarkMode={toggleDarkMode} />
+      <Navbar />
       <h1 className="font-bold text-3xl text-center items-center justify-between">
         Products for Sale Woman
       </h1>
