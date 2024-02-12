@@ -135,7 +135,7 @@ export default function Navbar() {
                   <div className="group relative text-sm">
                     <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
                       <Image
-                        src="/assets/duks1.jpg"
+                        src="/assets/zduks2.jpeg"
                         width={300}
                         height={300}
                         alt="Models sitting back to back, wearing Basic Tee in black and bone."
@@ -143,7 +143,7 @@ export default function Navbar() {
                       ></Image>
                     </div>
                     <a
-                      href="#"
+                      href="/woman"
                       className="mt-6 block font-medium text-gray-900"
                     >
                       <span
@@ -159,7 +159,7 @@ export default function Navbar() {
                   <div className="group relative text-sm">
                     <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
                       <Image
-                        src="/assets/duks1.jpg"
+                        src="/assets/zduks1.jpg"
                         width={300}
                         height={300}
                         alt="Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees."
@@ -167,7 +167,7 @@ export default function Navbar() {
                       ></Image>
                     </div>
                     <a
-                      href="#"
+                      href="woman"
                       className="mt-6 block font-medium text-gray-900"
                     >
                       <span
@@ -221,7 +221,7 @@ export default function Navbar() {
                         T-Shirts
                       </a>
                     </li>
-                    <li className="flow-root">
+                    {/* <li className="flow-root">
                       <a href="#" className="-m-2 block p-2 text-gray-500">
                         Jackets
                       </a>
@@ -230,7 +230,7 @@ export default function Navbar() {
                       <a href="#" className="-m-2 block p-2 text-gray-500">
                         Activewear
                       </a>
-                    </li>
+                    </li> */}
                     <li className="flow-root">
                       <a href="#" className="-m-2 block p-2 text-gray-500">
                         Browse All
@@ -250,7 +250,7 @@ export default function Navbar() {
                     aria-labelledby="women-accessories-heading-mobile"
                     className="mt-6 flex flex-col space-y-6"
                   >
-                    <li className="flow-root">
+                    {/* <li className="flow-root">
                       <a href="#" className="-m-2 block p-2 text-gray-500">
                         Watches
                       </a>
@@ -259,7 +259,7 @@ export default function Navbar() {
                       <a href="#" className="-m-2 block p-2 text-gray-500">
                         Wallets
                       </a>
-                    </li>
+                    </li> */}
                     <li className="flow-root">
                       <a href="#" className="-m-2 block p-2 text-gray-500">
                         Bags
@@ -282,7 +282,7 @@ export default function Navbar() {
                     </li>
                   </ul>
                 </div>
-                <div>
+                {/* <div>
                   <p
                     id="women-brands-heading-mobile"
                     className="font-medium text-gray-900"
@@ -320,7 +320,7 @@ export default function Navbar() {
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
               <div
                 id="tabs-1-panel-2"
@@ -341,7 +341,7 @@ export default function Navbar() {
                       ></Image>
                     </div>
                     <a
-                      href="#"
+                      href="/man"
                       className="mt-6 block font-medium text-gray-900"
                     >
                       <span
@@ -357,7 +357,7 @@ export default function Navbar() {
                   <div className="group relative text-sm">
                     <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
                       <Image
-                        src="/assets/duks1.jpg"
+                        src="/assets/duks2.jpg"
                         width={300}
                         height={300}
                         alt="Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt."
@@ -365,7 +365,7 @@ export default function Navbar() {
                       ></Image>
                     </div>
                     <a
-                      href="#"
+                      href="/man"
                       className="mt-6 block font-medium text-gray-900"
                     >
                       <span
@@ -391,14 +391,14 @@ export default function Navbar() {
                     aria-labelledby="men-clothing-heading-mobile"
                     className="mt-6 flex flex-col space-y-6"
                   >
-                    <li className="flow-root">
+                    {/* <li className="flow-root">
                       <a href="#" className="-m-2 block p-2 text-gray-500">
                         Tops
                       </a>
-                    </li>
+                    </li> */}
                     <li className="flow-root">
                       <a href="#" className="-m-2 block p-2 text-gray-500">
-                        Pants
+                        T-Shirts
                       </a>
                     </li>
                     <li className="flow-root">
@@ -408,7 +408,7 @@ export default function Navbar() {
                     </li>
                     <li className="flow-root">
                       <a href="#" className="-m-2 block p-2 text-gray-500">
-                        T-Shirts
+                        Pants
                       </a>
                     </li>
                     <li className="flow-root">
@@ -416,11 +416,11 @@ export default function Navbar() {
                         Jackets
                       </a>
                     </li>
-                    <li className="flow-root">
+                    {/* <li className="flow-root">
                       <a href="#" className="-m-2 block p-2 text-gray-500">
                         Activewear
                       </a>
-                    </li>
+                    </li> */}
                     <li className="flow-root">
                       <a href="#" className="-m-2 block p-2 text-gray-500">
                         Browse All
@@ -440,7 +440,7 @@ export default function Navbar() {
                     aria-labelledby="men-accessories-heading-mobile"
                     className="mt-6 flex flex-col space-y-6"
                   >
-                    <li className="flow-root">
+                    {/* <li className="flow-root">
                       <a href="#" className="-m-2 block p-2 text-gray-500">
                         Watches
                       </a>
@@ -449,12 +449,12 @@ export default function Navbar() {
                       <a href="#" className="-m-2 block p-2 text-gray-500">
                         Wallets
                       </a>
-                    </li>
-                    <li className="flow-root">
+                    </li> */}
+                    {/* <li className="flow-root">
                       <a href="#" className="-m-2 block p-2 text-gray-500">
                         Bags
                       </a>
-                    </li>
+                    </li> */}
                     <li className="flow-root">
                       <a href="#" className="-m-2 block p-2 text-gray-500">
                         Sunglasses
@@ -472,7 +472,7 @@ export default function Navbar() {
                     </li>
                   </ul>
                 </div>
-                <div>
+                {/* <div>
                   <p
                     id="men-brands-heading-mobile"
                     className="font-medium text-gray-900"
@@ -505,7 +505,7 @@ export default function Navbar() {
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -609,7 +609,7 @@ export default function Navbar() {
                                   ></Image>
                                 </div>
                                 <a
-                                  href="#"
+                                  href="/woman"
                                   className="mt-6 block font-medium text-gray-900"
                                 >
                                   <span
@@ -633,7 +633,7 @@ export default function Navbar() {
                                   ></Image>
                                 </div>
                                 <a
-                                  href="#"
+                                  href="/woman"
                                   className="mt-6 block font-medium text-gray-900"
                                 >
                                   <span
@@ -816,21 +816,23 @@ export default function Navbar() {
                   </div>
 
                   <div className="flex z-10">
-                    <div className="relative flex">
-                      <button
-                        onClick={handleToggleMenVisibility}
-                        type="button"
-                        className={`
+                    <div className="flex h-full space-x-8">
+                      <div className="flex">
+                        <div className="relative flex">
+                          <button
+                            onClick={handleToggleMenVisibility}
+                            type="button"
+                            className={`
                 border-transparent text-gray-400 hover:text-gray-800 relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out
               `}
-                        aria-expanded={isMenVisible ? "true" : "false"}
-                      >
-                        Men
-                      </button>
-                    </div>
+                            aria-expanded={isMenVisible ? "true" : "false"}
+                          >
+                            Men
+                          </button>
+                        </div>
 
-                    <div
-                      className={`
+                        <div
+                          className={`
               absolute inset-x-0 top-full text-sm text-gray-500
               ${
                 isMenVisible
@@ -838,74 +840,74 @@ export default function Navbar() {
                   : "opacity-0 transition ease-in duration-150"
               }
             `}
-                    >
-                      <div className="relative bg-white">
-                        <div className="mx-auto max-w-7xl px-8">
-                          <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
-                            <div className="col-start-2 grid grid-cols-2 gap-x-8">
-                              <div className="group relative text-base sm:text-sm">
-                                <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                  <Image
-                                    src="/assets/duks1.jpg"
-                                    width={300}
-                                    height={300}
-                                    alt="Drawstring top with elastic loop closure and textured interior padding."
-                                    className="object-cover object-center"
-                                  ></Image>
+                        >
+                          <div className="relative bg-white">
+                            <div className="mx-auto max-w-7xl px-8">
+                              <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
+                                <div className="col-start-2 grid grid-cols-2 gap-x-8">
+                                  <div className="group relative text-base sm:text-sm">
+                                    <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
+                                      <Image
+                                        src="/assets/duks1.jpg"
+                                        width={300}
+                                        height={300}
+                                        alt="Drawstring top with elastic loop closure and textured interior padding."
+                                        className="object-cover object-center"
+                                      ></Image>
+                                    </div>
+                                    <a
+                                      href="#"
+                                      className="mt-6 block font-medium text-gray-900"
+                                    >
+                                      <span
+                                        className="absolute inset-0 z-10"
+                                        aria-hidden="true"
+                                      ></span>
+                                      New Arrivals
+                                    </a>
+                                    <p aria-hidden="true" className="mt-1">
+                                      Shop now
+                                    </p>
+                                  </div>
+                                  <div className="group relative text-base sm:text-sm">
+                                    <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
+                                      <Image
+                                        src="/assets/duks2.jpg"
+                                        width={300}
+                                        height={300}
+                                        alt="Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt."
+                                        className="object-cover object-center"
+                                      ></Image>
+                                    </div>
+                                    <a
+                                      href="#"
+                                      className="mt-6 block font-medium text-gray-900"
+                                    >
+                                      <span
+                                        className="absolute inset-0 z-10"
+                                        aria-hidden="true"
+                                      ></span>
+                                      Artwork Tees
+                                    </a>
+                                    <p aria-hidden="true" className="mt-1">
+                                      Shop now
+                                    </p>
+                                  </div>
                                 </div>
-                                <a
-                                  href="#"
-                                  className="mt-6 block font-medium text-gray-900"
-                                >
-                                  <span
-                                    className="absolute inset-0 z-10"
-                                    aria-hidden="true"
-                                  ></span>
-                                  New Arrivals
-                                </a>
-                                <p aria-hidden="true" className="mt-1">
-                                  Shop now
-                                </p>
-                              </div>
-                              <div className="group relative text-base sm:text-sm">
-                                <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                  <Image
-                                    src="/assets/duks2.jpg"
-                                    width={300}
-                                    height={300}
-                                    alt="Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt."
-                                    className="object-cover object-center"
-                                  ></Image>
-                                </div>
-                                <a
-                                  href="#"
-                                  className="mt-6 block font-medium text-gray-900"
-                                >
-                                  <span
-                                    className="absolute inset-0 z-10"
-                                    aria-hidden="true"
-                                  ></span>
-                                  Artwork Tees
-                                </a>
-                                <p aria-hidden="true" className="mt-1">
-                                  Shop now
-                                </p>
-                              </div>
-                            </div>
-                            <div className="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
-                              <div>
-                                <p
-                                  id="Clothing-heading"
-                                  className="font-medium text-gray-900"
-                                >
-                                  Clothing
-                                </p>
-                                <ul
-                                  role="list"
-                                  aria-labelledby="Clothing-heading"
-                                  className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
-                                >
-                                  {/* <li className="flex">
+                                <div className="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
+                                  <div>
+                                    <p
+                                      id="Clothing-heading"
+                                      className="font-medium text-gray-900"
+                                    >
+                                      Clothing
+                                    </p>
+                                    <ul
+                                      role="list"
+                                      aria-labelledby="Clothing-heading"
+                                      className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
+                                    >
+                                      {/* <li className="flex">
                                     <a
                                       href="/man"
                                       className="hover:text-gray-800"
@@ -913,83 +915,107 @@ export default function Navbar() {
                                       Tops
                                     </a>
                                   </li> */}
-                                  <li className="flex">
-                                    <a href="#" className="hover:text-gray-800">
-                                      T-Shirts
-                                    </a>
-                                  </li>
-                                  <li className="flex">
-                                    <a href="#" className="hover:text-gray-800">
-                                      Sweaters
-                                    </a>
-                                  </li>
-                                  <li className="flex">
-                                    <a href="#" className="hover:text-gray-800">
-                                      Pants
-                                    </a>
-                                  </li>
-                                  <li className="flex">
-                                    <a href="#" className="hover:text-gray-800">
-                                      Jackets
-                                    </a>
-                                  </li>
-                                  {/* <li className="flex">
+                                      <li className="flex">
+                                        <a
+                                          href="/man"
+                                          className="hover:text-gray-800"
+                                        >
+                                          T-Shirts
+                                        </a>
+                                      </li>
+                                      <li className="flex">
+                                        <a
+                                          href="#"
+                                          className="hover:text-gray-800"
+                                        >
+                                          Sweaters
+                                        </a>
+                                      </li>
+                                      <li className="flex">
+                                        <a
+                                          href="#"
+                                          className="hover:text-gray-800"
+                                        >
+                                          Pants
+                                        </a>
+                                      </li>
+                                      <li className="flex">
+                                        <a
+                                          href="#"
+                                          className="hover:text-gray-800"
+                                        >
+                                          Jackets
+                                        </a>
+                                      </li>
+                                      {/* <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Activewear
                                     </a>
                                   </li> */}
-                                  <li className="flex">
-                                    <a href="#" className="hover:text-gray-800">
-                                      Browse All
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div>
-                                <p
-                                  id="Accessories-heading"
-                                  className="font-medium text-gray-900"
-                                >
-                                  Accessories
-                                </p>
-                                <ul
-                                  role="list"
-                                  aria-labelledby="Accessories-heading"
-                                  className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
-                                >
-                                  {/* <li className="flex">
+                                      <li className="flex">
+                                        <a
+                                          href="#"
+                                          className="hover:text-gray-800"
+                                        >
+                                          Browse All
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div>
+                                    <p
+                                      id="Accessories-heading"
+                                      className="font-medium text-gray-900"
+                                    >
+                                      Accessories
+                                    </p>
+                                    <ul
+                                      role="list"
+                                      aria-labelledby="Accessories-heading"
+                                      className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
+                                    >
+                                      {/* <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Watches
                                     </a>
                                   </li> */}
-                                  {/* <li className="flex">
+                                      {/* <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Wallets
                                     </a>
                                   </li> */}
-                                  {/* <li className="flex">
+                                      {/* <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Bags
                                     </a>
                                   </li> */}
-                                  <li className="flex">
-                                    <a href="#" className="hover:text-gray-800">
-                                      Sunglasses
-                                    </a>
-                                  </li>
-                                  <li className="flex">
-                                    <a href="#" className="hover:text-gray-800">
-                                      Hats
-                                    </a>
-                                  </li>
-                                  <li className="flex">
-                                    <a href="#" className="hover:text-gray-800">
-                                      Belts
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                              {/* <div>
+                                      <li className="flex">
+                                        <a
+                                          href="#"
+                                          className="hover:text-gray-800"
+                                        >
+                                          Sunglasses
+                                        </a>
+                                      </li>
+                                      <li className="flex">
+                                        <a
+                                          href="#"
+                                          className="hover:text-gray-800"
+                                        >
+                                          Hats
+                                        </a>
+                                      </li>
+                                      <li className="flex">
+                                        <a
+                                          href="#"
+                                          className="hover:text-gray-800"
+                                        >
+                                          Belts
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  {/* <div>
                                 <p
                                   id="Brands-heading"
                                   className="font-medium text-gray-900"
@@ -1023,6 +1049,8 @@ export default function Navbar() {
                                   </li>
                                 </ul>
                               </div> */}
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
