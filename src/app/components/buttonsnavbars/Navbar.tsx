@@ -2,14 +2,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import style from "styled-jsx/style";
 
 export default function Navbar() {
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
   const [isSearchVisible, setIsSearchVisible] = useState(false);
   const searchContainerRef = useRef(null);
-  const ref = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -68,7 +66,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="bg-white z-50">
+    <div className="bg-white">
       <div className="relative z-40 lg:hidden" role="dialog" aria-modal="true">
         <div className="fixed inset-0 bg-black bg-opacity-25"></div>
         <div className="fixed inset-0 z-40 flex">
@@ -394,7 +392,7 @@ export default function Navbar() {
                     className="mt-6 flex flex-col space-y-6"
                   >
                     <li className="flow-root">
-                      <a href="/man" className="-m-2 block p-2 text-gray-500">
+                      <a href="#" className="-m-2 block p-2 text-gray-500">
                         Tops
                       </a>
                     </li>
@@ -558,35 +556,19 @@ export default function Navbar() {
                   className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                   />
                 </svg>
               </button>
 
-              <div
-                style={{ ...style, zIndex: 1000 }}
-                className="ml-4 flex lg:ml-0"
-              >
-                <a href="#">
-                  <span className="sr-only">Your Company</span>
-                  <Image
-                    className="h-8 w-auto"
-                    src="/assets/duks1.jpg"
-                    width={300}
-                    height={300}
-                    alt=""
-                  ></Image>
-                </a>
-              </div>
-
-              <div className="hidden lg:ml-8 lg:block lg:self-stretch z-50">
+              <div className="flex z-10">
                 <div className="flex h-full space-x-8">
                   <div className="flex">
                     <div className="relative flex">
@@ -631,7 +613,7 @@ export default function Navbar() {
                                   className="mt-6 block font-medium text-gray-900"
                                 >
                                   <span
-                                    className="absolute inset-0 z-10"
+                                    className="absolute inset-0 z-50"
                                     aria-hidden="true"
                                   ></span>
                                   New Arrivals
@@ -694,38 +676,50 @@ export default function Navbar() {
                                       Dresses
                                     </a>
                                   </li>
-                                  <li className="flex">
+                                  {/* <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Pants
                                     </a>
-                                  </li>
+                                  </li> */}
                                   <li className="flex">
-                                    <a href="#" className="hover:text-gray-800">
+                                    <a
+                                      href="/woman"
+                                      className="hover:text-gray-800"
+                                    >
                                       Denim
                                     </a>
                                   </li>
                                   <li className="flex">
-                                    <a href="#" className="hover:text-gray-800">
+                                    <a
+                                      href="/woman"
+                                      className="hover:text-gray-800"
+                                    >
                                       Sweaters
                                     </a>
                                   </li>
                                   <li className="flex">
-                                    <a href="#" className="hover:text-gray-800">
+                                    <a
+                                      href="/woman"
+                                      className="hover:text-gray-800"
+                                    >
                                       T-Shirts
                                     </a>
                                   </li>
-                                  <li className="flex">
+                                  {/* <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Jackets
                                     </a>
-                                  </li>
-                                  <li className="flex">
+                                  </li> */}
+                                  {/* <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Activewear
                                     </a>
-                                  </li>
+                                  </li> */}
                                   <li className="flex">
-                                    <a href="#" className="hover:text-gray-800">
+                                    <a
+                                      href="/woman"
+                                      className="hover:text-gray-800"
+                                    >
                                       Browse All
                                     </a>
                                   </li>
@@ -743,16 +737,16 @@ export default function Navbar() {
                                   aria-labelledby="Accessories-heading"
                                   className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
                                 >
-                                  <li className="flex">
+                                  {/* <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Watches
                                     </a>
-                                  </li>
-                                  <li className="flex">
+                                  </li> */}
+                                  {/* <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Wallets
                                     </a>
-                                  </li>
+                                  </li> */}
                                   <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Bags
@@ -775,7 +769,7 @@ export default function Navbar() {
                                   </li>
                                 </ul>
                               </div>
-                              <div>
+                              {/* <div>
                                 <p
                                   id="Brands-heading"
                                   className="font-medium text-gray-900"
@@ -813,14 +807,15 @@ export default function Navbar() {
                                     </a>
                                   </li>
                                 </ul>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="flex">
+
+                  <div className="flex z-10">
                     <div className="relative flex">
                       <button
                         onClick={handleToggleMenVisibility}
@@ -910,12 +905,22 @@ export default function Navbar() {
                                   aria-labelledby="Clothing-heading"
                                   className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
                                 >
-                                  <li className="flex">
+                                  {/* <li className="flex">
                                     <a
                                       href="/man"
                                       className="hover:text-gray-800"
                                     >
                                       Tops
+                                    </a>
+                                  </li> */}
+                                  <li className="flex">
+                                    <a href="#" className="hover:text-gray-800">
+                                      T-Shirts
+                                    </a>
+                                  </li>
+                                  <li className="flex">
+                                    <a href="#" className="hover:text-gray-800">
+                                      Sweaters
                                     </a>
                                   </li>
                                   <li className="flex">
@@ -924,31 +929,15 @@ export default function Navbar() {
                                     </a>
                                   </li>
                                   <li className="flex">
-                                    <a
-                                      href="man"
-                                      className="hover:text-gray-800"
-                                    >
-                                      Sweaters
-                                    </a>
-                                  </li>
-                                  <li className="flex">
-                                    <a
-                                      href="man"
-                                      className="hover:text-gray-800"
-                                    >
-                                      T-Shirts
-                                    </a>
-                                  </li>
-                                  <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Jackets
                                     </a>
                                   </li>
-                                  <li className="flex">
+                                  {/* <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Activewear
                                     </a>
-                                  </li>
+                                  </li> */}
                                   <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Browse All
@@ -968,21 +957,21 @@ export default function Navbar() {
                                   aria-labelledby="Accessories-heading"
                                   className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
                                 >
-                                  <li className="flex">
+                                  {/* <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Watches
                                     </a>
-                                  </li>
-                                  <li className="flex">
+                                  </li> */}
+                                  {/* <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Wallets
                                     </a>
-                                  </li>
-                                  <li className="flex">
+                                  </li> */}
+                                  {/* <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Bags
                                     </a>
-                                  </li>
+                                  </li> */}
                                   <li className="flex">
                                     <a href="#" className="hover:text-gray-800">
                                       Sunglasses
@@ -1000,7 +989,7 @@ export default function Navbar() {
                                   </li>
                                 </ul>
                               </div>
-                              <div>
+                              {/* <div>
                                 <p
                                   id="Brands-heading"
                                   className="font-medium text-gray-900"
@@ -1033,7 +1022,7 @@ export default function Navbar() {
                                     </a>
                                   </li>
                                 </ul>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
                         </div>
@@ -1081,8 +1070,8 @@ export default function Navbar() {
                       aria-hidden="true"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
                       />
                     </svg>
@@ -1107,13 +1096,13 @@ export default function Navbar() {
                       className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                       stroke="currentColor"
                       aria-hidden="true"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
                       />
                     </svg>

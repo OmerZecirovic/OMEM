@@ -1,11 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Navbar from "../buttonsnavbars/Navbar";
 import BuyNowButton from "../buttonsnavbars/BuyNowbutton";
 import Footer from "../buttonsnavbars/Footer";
-import style from "styled-jsx/style";
 
 const items = [
   {
@@ -74,15 +73,15 @@ const Man = () => {
   const router = useRouter();
 
   return (
-    <div className="bg-gray-400 min-h-screen z-0">
+    <div className="bg-gray-400 min-h-screen">
       <Navbar />
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-8 m-8 mt-20">
         {items.map((item) => (
           <div
             key={item.id}
-            className="border rounded-md p-4 flex flex-col items-center justify-between relative"
+            className="border rounded-md p-8 flex flex-col items-center justify-between relative"
           >
-            <div className="hover:scale-x-[-1] transition-transform duration-300">
+            <div>
               <Image
                 src={item.image}
                 alt={item.name}

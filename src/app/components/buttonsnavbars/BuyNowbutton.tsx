@@ -9,7 +9,7 @@ const BuyNowButton: React.FC = () => {
         router.push("/buynow");
       }}
       type="button"
-      className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+      className="rounded-md bg-indigo-600 px-3.5 py-2.5 mt-2 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
     >
       Buy Now
     </button>

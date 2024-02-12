@@ -72,31 +72,20 @@ const items = [
 const Woman = () => {
   const router = useRouter();
 
-  const [isDarkModeActive, setDarkModeActive] = useState(false);
-
-  // Dark Mode Toggle Function
-  const toggleDarkMode = () => {
-    setDarkModeActive((prev) => !prev);
-  };
-
   return (
-    <div
-      className={`bg-gray-400 z-0 ${
-        isDarkModeActive ? "bg-dark text-dark" : ""
-      }`}
-    >
+    <div className="bg-gray-400 ">
       <Navbar />
       <h1 className="font-bold text-3xl text-center items-center justify-between">
         Products for Sale Woman
       </h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-8 m-8 mt-20">
         {items.map((item) => (
           <div
             key={item.id}
             className="border rounded-md p-4 flex flex-col items-center justify-between relative"
           >
-            <div className="hover:scale-x-[-1] transition-transform duration-300">
+            <div>
               <Image
                 src={item.image}
                 alt={item.name}
